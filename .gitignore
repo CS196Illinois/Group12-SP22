@@ -1,1 +1,13 @@
 .DS_Store
+
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
+
+Projects/DjangoApp/webpage/__pycache__/
+Projects/DjangoApp/register/__pycache__/
+local_settings.py
