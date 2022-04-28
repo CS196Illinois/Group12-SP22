@@ -1,5 +1,8 @@
+import re
 from django.shortcuts import render
 
-# Requests user dashboard
-def dashboard(request):
-    return render(request, "users/dashboard.html")
+def login(request):
+    return render(request, "planttracker/login.html")
+
+def NewUser(request):
+    return render(request, "planttracker/NewUser.html")
