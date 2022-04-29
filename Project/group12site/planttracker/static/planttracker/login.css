@@ -111,12 +111,6 @@ body {
     align-items: center;
 }
 
-.box-form .right .remember-me--forget-password input {
-    margin: 0;
-    margin-right: 7px;
-    width: auto;
-}
-
 .box-form .right button {
     color: #fff;
     font-size: 16px;
@@ -131,32 +125,8 @@ body {
 label {
     display: block;
     position: relative;
-    margin-left: 30px;
-}
-
-label::before {
-    content: ' \f00c';
-    position: absolute;
-    font-family: FontAwesome;
-    background: transparent;
-    border: 3px solid #70F570;
-    border-radius: 4px;
-    color: transparent;
-    left: -30px;
-    -webkit-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-}
-
-label:hover::before {
-    font-family: FontAwesome;
-    content: ' \f00c';
-    color: #fff;
-    cursor: pointer;
-    background: #70F570;
-}
-
-label:hover::before .text-checkbox {
-    background: #70F570;
+    margin-left: 0px;
+    font-size: 20px;
 }
 
 label span.text-checkbox {

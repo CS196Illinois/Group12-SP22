@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+    <link rel="stylesheet" type= "text/css" href="{% static 'planttracker/Boxcomp.css' %}">
+</head>
+<div class="header">
+    <a href="#" class="logo">Plant Tracker</a>
+    <div class="header-right">
+      <a class="active" href="#home">Explore</a>
+      <a class = "active" href="{% url 'login' %}">My Collection</a>
+      <a class = "active" href="{% url 'login' %}"> {% if user.is_authenticated %}
+        My Account
+      {% else %}
+        Sign In
+      {% endif %} </a>
+    </div>
+  </div>
+<div class="row">
+
+    <div class="column" id="test">
+        <button class="button">{{plant1.name}}</button>
+        <button class="addbutton">Add to Collection</button>
+        <img class="imageset" src={{plant1.image}} alt="Snow" style="width:100%">
+    </div>
+    <div class="column" id="test">
+        <button class="button">{{plant2.name}}</button>
+        <button class="addbutton">Add to Collection</button>
+        <img class="imageset" src={{plant2.image}} alt="Snow" style="width:100%">
+    </div>
+    <div class="column" id="test">
+        <button class="button">{{plant3.name}}</button>
+        <button class="addbutton">Add to Collection</button>
+        <img class="imageset" src={{plant3.image}} alt="Snow" style="width:100%">
+    </div>
+</div>
+<div class="row">
+
+    <div class="column" id="test">
+        <button class="button">{{plant4.name}}</button>
+        <button class="addbutton">Add to Collection</button>
+        <img class="imageset" src={{plant4.image}} alt="Snow" style="width:100%">
+    </div>
+    <div class="column" id="test">
+        <button class="button">{{plant5.name}}</button>
+        <button class="addbutton">Add to Collection</button>
+        <img class="imageset" src={{plant5.image}} alt="Snow" style="width:100%">
+    </div>
+    <div class="column" id="test">
+        <button class="button">{{plant6.name}}</button>
+        <button class="addbutton">Add to Collection</button>
+        <img class="imageset" src={{plant6.image}} alt="Snow" style="width:100%">
+    </div>
+</div>

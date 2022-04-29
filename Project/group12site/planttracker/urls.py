@@ -4,7 +4,6 @@ from django.urls import path
 from planttracker import views as plantviews
 
 urlpatterns = [
-    path('', plantviews.login, name="login"),
-    path('login/', plantviews.login, name="login"),
+    path('', plantviews.index, name="Home"),
     path('NewUser/', plantviews.NewUser, name="NewUser"),
 ]
